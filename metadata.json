@@ -1,0 +1,6 @@
+{
+  "name": "LD Earn",
+  "description": "A comprehensive earning platform, referral tracker, and wallet withdrawal simulation dashboard in Naira.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

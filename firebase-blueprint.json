@@ -1,0 +1,71 @@
+{
+  "entities": {
+    "Account": {
+      "title": "Account",
+      "description": "User account containing balance, referral list, activities, and completed tasks",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "password": { "type": "string" },
+        "fullName": { "type": "string" },
+        "profileLevel": { "type": "string" },
+        "totalBalance": { "type": "number" },
+        "availableWithdrawal": { "type": "number" },
+        "referralEarnings": { "type": "number" },
+        "referralBalance": { "type": "number" },
+        "taskBalance": { "type": "number" },
+        "totalReferrals": { "type": "number" },
+        "referralsList": { "type": "array" },
+        "activitiesList": { "type": "array" },
+        "refSlug": { "type": "string" },
+        "refCode": { "type": "string" },
+        "profilePhoto": { "type": "string" },
+        "tasks": { "type": "array" },
+        "bankName": { "type": "string" },
+        "accountNumber": { "type": "string" },
+        "accountName": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "pin": { "type": "string" }
+      },
+      "required": ["email", "password"]
+    },
+    "Task": {
+      "title": "Task",
+      "description": "Daily earnings task for members",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "reward": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "title", "reward"]
+    },
+    "Token": {
+      "title": "Token",
+      "description": "Vip, Premium or Solo activation codes",
+      "type": "object",
+      "properties": {
+        "token": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["token", "status"]
+    }
+  },
+  "firestore": {
+    "/accounts/{email}": {
+      "schema": "Account",
+      "description": "User accounts keyed by lowercased email address"
+    },
+    "/tasks/{taskId}": {
+      "schema": "Task",
+      "description": "Tasks master database"
+    },
+    "/tokens/{token}": {
+      "schema": "Token",
+      "description": "Tokens database keyed by token code"
+    }
+  }
+}

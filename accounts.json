@@ -1,0 +1,54 @@
+[
+  {
+    "email": "livingstone0806382@gmail.com",
+    "password": "Livingstone44()",
+    "fullName": "Livingstone",
+    "profileLevel": "Solo",
+    "totalBalance": 3500,
+    "availableWithdrawal": 3500,
+    "referralEarnings": 0,
+    "referralBalance": 0,
+    "taskBalance": 3500,
+    "totalReferrals": 0,
+    "referralsList": [],
+    "activitiesList": [
+      {
+        "id": "BY-3063",
+        "type": "Bonus",
+        "title": "First-Time Login Bonus",
+        "amount": 3500,
+        "isCredit": true,
+        "timestamp": "2026-06-25 12:49",
+        "details": "₦3,500 welcome bonus credited automatically upon your first-time login.",
+        "status": "Successful"
+      },
+      {
+        "id": "BY-5775",
+        "type": "Bonus",
+        "title": "First-Time Login Bonus",
+        "amount": 3500,
+        "isCredit": true,
+        "timestamp": "2026-06-30 16:59",
+        "details": "₦3,500 welcome bonus credited automatically upon your first-time login.",
+        "status": "Successful"
+      }
+    ],
+    "refSlug": "LIVINGSTONE-5234",
+    "refCode": "5234",
+    "profilePhoto": null,
+    "tasks": [
+      {
+        "id": "task-admin-1782746542730",
+        "platform": "YouTube",
+        "title": "Watch and Subscribe: Emerging Africa Tech Giants Roundtable",
+        "reward": 400,
+        "actionUrl": "https://youtube.com/c/african_founders",
+        "instruction": "Click to open the sponsor YouTube video. Watch for at least 1 minute, subscribe to the channel, and like the video. Submit your precise YouTube channel name prefix or handle for fast automated approval postback.",
+        "status": "Available",
+        "category": "Video Watching",
+        "difficulty": "Easy",
+        "createdAt": "2026-06-29T15:22:22.730Z"
+      }
+    ]
+  }
+]
